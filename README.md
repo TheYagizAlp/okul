@@ -1,0 +1,2 @@
+# okul
+Okuldaki kodlarım.
