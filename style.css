@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #eee;
+}
+.header{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+}
+.logo{
+    width: 200px;
+    padding: 10px;
+}
+.head{
+    background-color: #777;
+    height: 80px;
+    display: flex;
+    line-height: 80px;
+    padding-left: 100px;
+}
+.menu{
+    background-color: #aaa;
+    height: 40px;
+    line-height: 40px;
+    box-shadow: #333 0px 5px 10px;
+    position: relative;
+}
+.list{
+    display: flex;
+    list-style: none;
+    margin-left: 150px;
+}
+.content{
+    margin: 0px auto;
+    width: 80%;
+    background-color: #ccc;
+    display: flex;
+    height: 688px;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.aciklama{
+    text-align: justify;
+    width: 70%;
+}
+.item{
+    padding: 10px;
+}
+.item-hr{
+    margin-left: 20px;
+}
+.foto{
+    width: 400px;
+    margin-left: 200px;
+}
+hr{
+    width: 90%;
+}
+.footer{
+    background-color: #d7482d;
+    display: flex;
+    height: 70px;
+    padding-left: 100px;
+    align-items: center;
+}
