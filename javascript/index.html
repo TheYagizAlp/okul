@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Ders</title>
+</head>
+<body>
+    <script>
+        function buyukHarf(str) {
+            return str.toUpperCase();
+        }
+        function kucukHarf(str) {
+            return str.toLowerCase();
+        }
+        function karakterSayisi(str) {
+            return str.length;
+        }
+        function ilkUcKarakter(str) {
+            return str.substr(0, 3);
+        }
+        function sonKarakter(str) {
+            return str.at(-1);
+        }
+        function degistir(str) {
+            return str.replace("Sınıfı", "Şubesi");
+        }
+        function patlat(str) {
+            return str.split(" ");
+        }
+
+        const str = "Merhaba 11 Bilişim Sınıfı";
+
+        console.log(buyukHarf(str));
+        console.log(kucukHarf(str));
+        console.log(karakterSayisi(str));
+        console.log(ilkUcKarakter(str));
+        console.log(sonKarakter(str));
+        console.log(degistir(str));
+        console.log(patlat(str));
+    </script>
+</body>
+</html>
