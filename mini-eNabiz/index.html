@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Randevu Sistemi</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/hospitalIcon.png" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <h1>🩺 Mini e-Nabız Randevu Sistemi</h1>
+
+    <!-- Başarı mesajı -->
+    <div id="mesajKutusu"></div>
+
+    <form id="randevuForm">
+      <label>Ad Soyad:</label>
+      <input type="text" id="adSoyad" required>
+
+      <label>TC Kimlik No:</label>
+      <input type="text" id="tc" maxlength="11" required>
+
+      <label>Alan Seçimi:</label>
+      <select id="doktor" required>
+        <option value="">Seçiniz</option>
+        <option value="Dahiliye">Dahiliye</option>
+        <option value="Kardiyoloji">Kardiyoloji</option>
+        <option value="Göz Hastalıkları">Göz Hastalıkları</option>
+        <option value="Cildiye">Cildiye</option>
+        <option value="Ortopedi">Ortopedi</option>
+        <option value="Nöroloji">Nöroloji</option>
+        <option value="Psikiyatri">Psikiyatri</option>
+        <option value="Aile Hekimliği">Aile Hekimliği</option>
+        <option value="Fizik Tedavi">Fizik Tedavi</option>
+      </select>
+
+      <label>Tarih Seç:</label>
+      <input type="date" id="tarih" required>
+
+      <label>Saat Seç:</label>
+      <input type="time" id="saat" required>
+
+      <button type="submit">Randevu Al</button>
+    </form>
+
+    <h2>📋 Alınan Randevular</h2>
+    <table id="randevuListesi">
+      <thead>
+        <tr>
+          <th>Ad Soyad</th>
+          <th>TC</th>
+          <th>Doktor</th>
+          <th>Tarih</th>
+          <th>Saat</th>
+          <th>İşlem</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div id="randevuSayaci">Toplam Randevu Sayısı: 0</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
