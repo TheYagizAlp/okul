@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Döküment</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Ekip Alım Formu</h2>
+                <p>Lütfen aşağıdaki formu eksiksiz doldurunuz.</p>
+                <fieldset>
+                    <legend><b>👤 Kişisel Bilgiler</b></legend>
+                    <form name="form" action="#" method="get" class="form">
+                        <p><b>Adınız Soyadınız:</b></p><input type="text" name="isim" id="isim" class="form-control" placeholder="Ad-Soyad Giriniz"><br>
+                        <p><b>E-Posta Adresiniz:</b></p><input type="email" name="email" id="email" class="form-control" placeholder="Email Giriniz"><br>
+                        <p><b>Telefon Numaranız:</b></p><input type="text" name="isim" id="isim" class="form-control" placeholder="Telefon Numarası Giriniz"><br>
+                        <p><b>Doğum Tarihiniz:</b></p><input type="date" name="tarih" id="tarih" class="form-control">
+                    </form>
+                </fieldset>
+            </div>
+            <div class="col-md-4">
+                <fieldset>
+                    <legend><b>🖥 Eğitim Tercihleri</b></legend>
+                    <form name="form" action="#" method="get" class="form">
+                        <p><b>Kurs Seçimi:</b></p>
+                        <select name="kurslar" id="kurslar" class="form-control">
+                            <option value="#">Lütfen Seçiniz</option>
+                            <option value="ekipman">Temel Ekipman Eğitimi</option>
+                            <option value="os">İşletim Sistemleri Eğitimi</option>
+                            <option value="icDonanim">İç Donanım Eğitimi</option>
+                            <option value="disDonanim">Dış Donanım Eğitimi</option>
+                        </select>
+                        <p><b>Bilgisayar Bilginiz (1-10):</b></p><b>1</b><input type="range" name="bilgi" id="bilgi" min="1" max="10"><b>10</b>
+                        <p><b>Uygun Olduğunuz Günler:</b></p>
+                        <input type="checkbox" name="uygunluk1" id="haftaici1">Hafta İçi Sabah <br>   
+                        <input type="checkbox" name="uygunluk2" id="haftasonu1">Hafta Sonu Sabah <br>
+                        <input type="checkbox" name="uygunluk3" id="haftaici2">Hafta İçi Akşam <br>
+                        <input type="checkbox" name="uygunluk4" id="haftasonu2">Hafta Sonu Akşam <br>
+                    </form>
+                </fieldset>
+            </div>
+            <div class="col-md-4">
+                <fieldset>
+                    <legend><b>📂 Ek Bilgiler</b></legend>
+                    <form name="form" action="#" method="get" class="form">
+                        <p><b>Varsa Github/Site Linki:</b></p>
+                        <input type="text" name="link" id="link" placeholder="https://***.com/***">
+                        <p><b>Cinsiyet:</b></p>
+                        <input type="radio" name="cinsiyet" id="xx"> Kadın
+                        <input type="radio" name="cinsiyet" id="xy"> Erkek <br>
+                        <p><b>CV Yükleyiniz:</b></p>
+                        <input type="file" name="cv" id="cv"><br>
+                        <p><b>Kullanıcı Teması Seçimi:</b></p>
+                        <input type="color" name="tema" id="tema">
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <form action="#" method="get" name="form">
+                    <input type="submit" value="Kayıt Ol" name="kayit" id="iptal" class="btn btn-success">
+                    <input type="reset" value="İptal Et" name="iptal" id="iptal" class="btn btn-warning">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
